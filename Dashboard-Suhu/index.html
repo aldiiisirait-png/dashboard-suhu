@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard Monitoring Suhu</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Dashboard Monitoring Suhu</h1>
+
+        <p class="subtitle">
+            Monitoring Suhu dan Kelembapan
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🌡️ Suhu</h3>
+
+                <div class="value">
+                    <span id="temperature">28.5</span> °C
+                </div>
+
+                <p>Data DHT</p>
+            </div>
+
+
+            <div class="card">
+                <h3>💧 Kelembapan</h3>
+
+                <div class="value">
+                    <span id="humidity">65</span> %
+                </div>
+
+                <p>Data DHT</p>
+            </div>
+
+
+            <div class="card">
+                <h3>🕐 Waktu</h3>
+
+                <div class="value" id="time">
+                    00:00:00
+                </div>
+
+                <p id="date">
+                    00/00/0000
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>📊 Status</h3>
+
+                <div class="status" id="status">
+                    NORMAL
+                </div>
+
+                <p>Kondisi Suhu</p>
+            </div>
+
+        </div>
+
+
+        <div class="chart-container">
+
+            <h2>Grafik Suhu</h2>
+
+            <canvas id="temperatureChart"></canvas>
+
+        </div>
+
+
+        <div class="footer">
+
+            Dashboard Monitoring Suhu
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
